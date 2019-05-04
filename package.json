@@ -1,0 +1,16 @@
+{
+  "name": "my",
+  "version": "1.0.0",
+  "description": "Define templates for me",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "define",
+    "my",
+    "assets"
+  ],
+  "author": "Th0rN13",
+  "license": "MIT"
+}
