@@ -1,7 +1,7 @@
 {
   "name": "myd",
-  "version": "1.0.3",
-  "description": "Define templates for me",
+  "version": "1.0.4",
+  "description": "Define shortcodes for CLI",
   "main": "index.js",
   "bin" : {
     "myd": "./bin/myd.js"
@@ -13,5 +13,9 @@
     "assets"
   ],
   "author": "Th0rN13",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Th0rN13/myd.git"
+  },
   "license": "MIT"
 }

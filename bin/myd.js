@@ -11,6 +11,11 @@ console.log(`\x1b[93mMyDefine \x1b[95mv${packageJSON.version}\x1b[0m`);
 
 const main = async () => {
   defines = await someUtils.read();
+  if (defines && defines.length === 0) {
+    defines = [{ "name": "myd", "define": "https://github.com/Th0rN13/myd.git"}]
+    await someUtils.write(defines);
+    defines = await someUtils.read();
+  }
   //console.log(`Defines: ${defines} ${typeof defines}`)
   switch (args[0] && args[0].toLowerCase()) {
     case 'define':
