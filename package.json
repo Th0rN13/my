@@ -1,15 +1,12 @@
 {
   "name": "myd",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Define templates for me",
   "main": "index.js",
   "bin" : {
-    "myd": "./bin/index.js"
+    "myd": "./bin/myd.js"
   },
-  "scripts": {
-    "bin": "node ./bin/index.js",
-    "test": "test"
-  },
+  "scripts": {},
   "keywords": [
     "define",
     "my",
