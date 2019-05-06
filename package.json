@@ -17,5 +17,6 @@
     "type": "git",
     "url": "https://github.com/Th0rN13/myd.git"
   },
+  "preferGlobal": true,
   "license": "MIT"
 }
