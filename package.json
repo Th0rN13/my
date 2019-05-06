@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Define templates for me",
   "main": "index.js",
+  "bin" : {
+    "myd": "./bin/index.js"
+  },
   "scripts": {
+    "bin": "node ./bin/index.js",
     "test": "test"
   },
   "keywords": [
