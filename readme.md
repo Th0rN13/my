@@ -1,23 +1,49 @@
 ## MyDefine
 
-Tool for define shortcodes for often used repositories
+The tool for define aliases to often used git repositories.
 
 ## Install
 
-npm i -g myd
+```sh
+$ npm i -g myd
+```
 
 ## Usage
 
-`myd define [shortcode] [expression]` - define `shortcode` to `expression`
+#### Define `shortcode` to `expression`.
 
-`myd delete shortcode` - delete `shortcode`
+```sh
+$ myd define shortcode expression
+```
 
-`myd list`  - show list of your shortcodes
+#### Delete `shortcode`.
 
-`myd cl shortcodes arguments` - for your `shortcode` run command `git clone expression arguments`
+```sh
+$ myd delete shortcode
+```
 
-**Examples**
+#### Show your shortcodes list.
 
-`myd define pug https://github.com/Th0rN13/pug-template` - set `pug` shortcode for my template
+```sh
+$ myd list
+```
 
-`myd cl pug` - git clone my template pug-template
+#### Run command `git clone [expression] [arguments]` for your `shortcode`.
+
+```sh
+$ myd cl shortcodes arguments
+```
+
+## Examples
+
+#### Setting `pug` shortcode for my `pug-template` repository.
+
+```sh
+$ myd define pug https://github.com/Th0rN13/pug-template
+```
+
+- git clone my template pug-template
+
+```sh
+$ myd cl pug
+```
