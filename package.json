@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "Define shortcodes for CLI",
   "main": "index.js",
-  "bin" : {
+  "bin": {
     "myd": "./bin/myd.js"
   },
   "scripts": {},
@@ -18,5 +18,10 @@
     "url": "https://github.com/Th0rN13/myd.git"
   },
   "preferGlobal": true,
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@atomix/eslint-config": "^7.0.0-next.1",
+    "eslint": "^5.16.0",
+    "prettier": "^1.17.0"
+  }
 }
