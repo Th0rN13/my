@@ -18,6 +18,7 @@ globals:
 rules:
   max-len: off
   import/no-cycle: off
+  no-console: off
   no-param-reassign: off
   prettier/prettier: off
   prefer-rest-params: off

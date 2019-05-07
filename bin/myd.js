@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-const someUtils = require('./../lib/index')
 const runCLI = require('child_process').execSync
+const someUtils = require('./../lib/index')
 const packageJSON = require('./../package.json')
 
-const args = process.argv.splice(process.execArgv.length + 2)
+const argsStart = 2
+const args = process.argv.splice(process.execArgv.length + argsStart)
 
 let defines = []
 
@@ -76,7 +77,7 @@ const main = async () => {
           console.log(`Define found ${defines[find].name} : ${defines[find].define}`)
           // run cli git
           try {
-            runCLI(`git clone ${  defines[find].define  } ${  args.slice(2).join(' ')}`)
+            runCLI(`git clone ${defines[find].define} ${args.slice(argsStart).join(' ')}`)
           } catch(error) {
             console.log('Error run git')
           }
