@@ -8,13 +8,13 @@ npm i -g myd
 
 ## Usage
 
-`myd define \[shortcode\] \[expression\]` - define `\[shortcode\]` to `\[expression\]`
+`myd define [shortcode] [expression]` - define `shortcode` to `expression`
 
-`myd delete \[shortcode\]` - delete `\[shortcode\]`
+`myd delete shortcode` - delete `shortcode`
 
 `myd list`  - show list of your shortcodes
 
-`myd cl \[shortcodes\] \[arguments\]` - for your `\[shortcode\]` run command `git clone \[expression\] \[arguments\]`
+`myd cl shortcodes arguments` - for your `shortcode` run command `git clone expression arguments`
 
 **Examples**
 
