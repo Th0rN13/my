@@ -1,6 +1,6 @@
 ## MyDefine
 
-Tool for define often used repositories
+Tool for define shortcodes for often used repositories
 
 ## Install
 
@@ -8,11 +8,16 @@ npm i -g myd
 
 ## Usage
 
-myd define \[define\] \[expression\] - define \[define\] to \[expression\]
+myd define \[shortcode\] \[expression\] - define \[shortcodes\] to \[expression\]
 
-myd delete \[define\] - delete \[define\]
+myd delete \[shortcode\] - delete \[shortcode\]
 
-myd list  - show list of your defines
+myd list  - show list of your shortcodes
 
-myd cl \[define\] - run for your \[define\] "git clone \[expression\]"
+myd cl \[shortcodes\] \[arguments\] - run for your \[shortcodes\] "git clone \[expression\] \[arguments\]"
 
+**Examples**
+
+`myd define pug https://github.com/Th0rN13/pug-template` - set `pug` shortcode for my template
+
+`myd cl pug` - git clone my template pug-template

@@ -75,7 +75,7 @@ const main = async () => {
           console.log(`Define found ${defines[find].name} : ${defines[find].define}`);
           //run cli git
           try {
-            runCLI('git clone ' + defines[find].define)
+            runCLI('git clone ' + defines[find].define + " " + args.slice(2).join(' '))
           } catch(e) {
             console.log("Error run git")
           }
