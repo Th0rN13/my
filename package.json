@@ -1,6 +1,6 @@
 {
   "name": "myd",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Define shortcodes for CLI",
   "main": "index.js",
   "bin": {
