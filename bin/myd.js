@@ -18,7 +18,7 @@ const main = async () => {
     await someUtils.write(defines)
     defines = await someUtils.read()
   }
-  // console.log(`Defines: ${defines} ${typeof defines}`)
+
   switch (args[0] && args[0].toLowerCase()) {
     case 'define':
       if (args[1] && args[2]) {
