@@ -70,6 +70,7 @@ const main = async () => {
       }
       break
     case 'cl':
+    case 'clone':
       if (args[1]) {
         console.log(`Run "git clone" for "${args[1]}"`)
         const find = defines.findIndex((el) => (args[1].toLowerCase() === el.name))
